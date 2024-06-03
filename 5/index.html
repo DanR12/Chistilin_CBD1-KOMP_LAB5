@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="./css/styley.css">
+    <script src="./js/scripts.js"> </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="logo" src="./img/Honda_Logo.svg.png" alt="Profile Picture">
+            <nav>
+                <input class="head" type="text" placeholder="Search">
+                <button class="head">Cart</button>
+                <button class="head">Help</button>
+                <div class="user-profile">
+                    <img src="./img/Saul_2009.webp" alt="Profile Picture">
+                    <button class="head">Saul Goodman</b>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="cart">
+                <h2>Your Cart</h2>
+                <p>Items List</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>PRODUCT DETAILS</th>
+                            <th>QUANTITY</th>
+                            <th>PRICE</th>
+                            <th>TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                    </tbody>
+                </table>
+                <p>Total: <span id="total-price">₹300.00</span></p>
+            </section>
+            <section class="summary">
+                <h2>Order Summary</h2>
+                <p>ITEMS<span id="items-total">₹300.00</span></p>
+                <p>TAX CHARGES <span id="tax-charges">₹30.00</span></p>
+                <p>DELIVERY CHARGES<span id="delivery-charges">₹60.00</span></p>
+                <p>GRAND TOTAL<span id="grand-total">₹390.00</span></p>
+                <h3>Payment</h3>
+                <p>WALLET BALANCE</p>
+                <div class="balance">
+                    <img class="profile-pic" src="./img/Saul_2009.webp" alt="Profile Picture">
+                    <p>Saul Goodman</p>
+                    <p>Remaining Balance: ₹1090.00</p>
+                </div>
+                <button class="payNOW">Pay Now</button>
+                <button class="INEEDAMORE">Add More Items</button>
+            </section>
+        </main>
+    </div>
+    <div class="additional-products">
+        <h2>Available products</h2>
+        <div id="additional-products-list"></div>
+    </div>
+</body>
+</html>
